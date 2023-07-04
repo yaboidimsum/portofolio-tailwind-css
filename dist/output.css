@@ -554,9 +554,9 @@ video {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1320px) {
   .container {
-    max-width: 1440px;
+    max-width: 1320px;
   }
 }
 
@@ -596,12 +596,20 @@ video {
   top: 100%;
 }
 
+.-bottom-0 {
+  bottom: -0px;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-\[100\] {
   z-index: 100;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .mx-4 {
@@ -685,18 +693,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-48 {
-  margin-top: 12rem;
 }
 
 .block {
@@ -1013,22 +1009,6 @@ video {
   padding-top: 9rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1335,11 +1315,6 @@ html {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:text-primary) {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 :is(.dark .dark\:text-slate-400) {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
@@ -1348,31 +1323,6 @@ html {
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-blue-200) {
-  --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-blue-100) {
-  --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-slate-200) {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-sky-100) {
-  --tw-text-opacity: 1;
-  color: rgb(224 242 254 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-secondary) {
-  --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:shadow-slate-500) {
@@ -1522,12 +1472,8 @@ html {
     margin-right: auto;
   }
 
-  .xl\:h-1\/4 {
-    height: 25%;
-  }
-
-  .xl\:w-10\/12 {
-    width: 83.333333%;
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 
   .xl\:w-1\/3 {
